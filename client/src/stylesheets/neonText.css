@@ -1,0 +1,14 @@
+.neon-hover {
+  transition: all 0.3s ease;
+}
+
+.neon-hover:hover {
+  color: #f8f8f8;
+  text-shadow:
+    0 0 4px #ffffff,
+    0 0 10px #d1d1d1,
+    0 0 20px #ffffff,
+    0 0 30px rgba(255, 255, 255, 0.6),
+    0 0 40px rgba(255, 255, 255, 0.4);
+  filter: brightness(1.2);
+}

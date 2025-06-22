@@ -1,0 +1,179 @@
+@font-face {
+    font-family: "MyFont-chick";
+    src: url("/fonts/CHICKEN-Pie.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  /* ../src/fonts/CHICKEN\ Pie.otf */
+  
+  .my-chick {
+    font-family: "MyFont-chick", sans-serif;
+  }
+
+
+
+  /* pokemon  */
+  @font-face {
+    font-family: "MyFont-poke";
+    src: url("/fonts/Pokemon\ Solid.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  /* ../src/fonts/Pokemon\ Solid.ttf */
+  
+  .my-poke {
+    font-family: "MyFont-poke", sans-serif;
+  }
+
+
+  /* strawberry */
+  @font-face {
+    font-family: "MyFont-straw";
+    src: url("/fonts/Strawberry\ Rounded\ free\ for\ personal\ use\ only.otf") format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  .my-straw {
+    font-family: "MyFont-straw", sans-serif;
+  }
+
+
+  /* ghost1 */
+
+  @font-face {
+    font-family: "MyFont-ghost";
+    src: url("../fonts/Another\ Danger\ Slanted\ -\ Demo.otf") format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  .my-ghost {
+    font-family: "MyFont-ghost", sans-serif;
+  }
+
+
+
+  /* best for buttons */
+
+  @font-face {
+    font-family: "kolhoz";
+    src: url("/fonts/Kolhoz.otf") format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  .my-kolhoz{
+    font-family: "kolhoz" , sans-serif;
+  }
+
+
+
+  @font-face {
+    font-family: "Emigrate";
+    src: url("/fonts/Emigrate.otf") format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  .my-emig{
+    font-family: "Emigrate" , sans-serif;
+  }
+
+
+  @font-face {
+    font-family: "mayan";
+    src: url("/fonts/Mayan.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  .my-mayan{
+    font-family: "mayan" , sans-serif;
+  }
+
+
+  @font-face {
+    font-family: "karate";
+    src: url("/fonts/Karate.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  .my-karate{
+    font-family: "karate" , sans-serif;
+  }
+
+  /* best for paragraph */
+
+  @font-face {
+    font-family: "bunny";
+    src: url("/fonts/Bunny.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  .my-bunny{
+    font-family: "bunny" , sans-serif;
+  }
+
+
+  /* for normal paragraphs and heading  */
+
+  @font-face {
+    font-family: "janda";
+    src: url("/fonts/janda.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  .my-janda{
+    font-family: "janda" , sans-serif;
+  }
+
+
+  @font-face {
+    font-family: "chili";
+    src: url("/fonts/Chilling.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  .my-chili{
+    font-family: "chili" , sans-serif !important;
+  }
+
+
+  @font-face {
+    font-family: "melon";
+    src: url("/fonts/Chilling.otf") format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  .my-melon{
+    font-family: "melon" , sans-serif;
+  }
+
+
+  
+/* 
+@font-face {
+    font-family: "mayan";
+    src: url("/fonts/Mayan.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  .my-mayan{
+    font-family: "mayan" , sans-serif;
+  } */
+
+
+
+
+  
+  
+
+
+  
