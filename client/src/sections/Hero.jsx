@@ -146,7 +146,7 @@ const Hero = () => {
             {/* FIXED: Mobile button container */}
             <div className="flex flex-col gap-4 w-full">
               <Button
-                text="See My Work"
+                text="Go to Work"
                 className="w-full max-w-xs h-12 my-straw"
                 id="counter"
               />
@@ -207,7 +207,7 @@ const Hero = () => {
 
             <div className="flex flex-col sm:flex-row items-center justify-self-end gap-4 sm:gap-6">
               <Button
-                text="See My Work"
+                text="Go to Work"
                 className="w-80 h-16 my-straw"
                 id="counter"
               />
