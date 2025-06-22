@@ -35,7 +35,7 @@ export const useAuthStore = create((set, get) => ({
     if (error?.response?.data?.msg) {
       console.log(error.response.data.msg);
     } else {
-      toast.error("Failed to fetch reviews.");
+      console.log("Failed to fetch reviews.");
     }
   }
 }
