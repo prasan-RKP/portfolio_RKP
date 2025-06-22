@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "build":  "npm install --legacy-peer-deps && npm install --prefix client --legacy-peer-deps && npm run build --prefix client",
-    "start": "nodemon server/index.js",
+    "start": "node server/index.js",
     "dev": "nodemon server/index.js"
   },
   "keywords": [],
