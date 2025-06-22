@@ -19,7 +19,7 @@ const _dirname = path.resolve();
 app.use(express.json({ limit: "10mb" }));
 app.use(cookieParser());
 app.use(cors({
-  origin: "http://localhost:5173",
+  origin: ["http://localhost:5173", "https://portfolio-rkp.onrender.com"],
   credentials: true
 }));
 
