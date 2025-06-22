@@ -6,6 +6,6 @@ export const axiosInstance = axios.create({
     //baseURL: 'http://localhost:3008/auth',
 
     //for all and global
-    baseURL: 'https://portfolio-rkp.onrender.com',
+    baseURL: 'https://portfolio-rkp.onrender.com/auth',
     withCredentials: false
 })
