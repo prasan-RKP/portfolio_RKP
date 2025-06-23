@@ -134,7 +134,7 @@ const Hero = () => {
                 {wrapLetters("into Creative Builds")}
               </h2>
               <h2 className="anim-results">
-                {wrapLetters("that Empower People")}
+                {wrapLetters("that Empower Community")}
               </h2>
             </div>
 
