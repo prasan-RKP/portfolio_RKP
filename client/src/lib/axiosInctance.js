@@ -24,4 +24,20 @@ export const axiosInstance = axios.create({
 });
 
 
+// checkout in morning 
+
+// new code 
+"scripts": {
+  "build": "npm install --legacy-peer-deps && npm install --prefix client --legacy-peer-deps && npm run build --prefix client",
+  "start": "node server/index.js",
+  "dev": "concurrently \"npm run server\" \"npm run client\"",
+  "server": "nodemon server/index.js",
+  "client": "npm run dev --prefix client"
+}
+
+// old code 
+"build":  "npm install --legacy-peer-deps && npm install --prefix client --legacy-peer-deps && npm run build --prefix client",
+    "start": "node server/index.js",
+    "dev": "nodemon server/index.js"
+
 */
