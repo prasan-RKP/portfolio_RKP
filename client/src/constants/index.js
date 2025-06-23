@@ -28,18 +28,13 @@ const words = [
   { text: "Code", imgPath: "/images/code.svg" },
 ];
 
-// const counterItems = [
-//   { value: 2, suffix: "+", label: "Years of Experience" },
-//   { value: 10, suffix: "+", label: "Satisfied Clients" },
-//   { value: 5, suffix: "+", label: "Completed Projects" },
-//   { value: 88, suffix: "%", label: "Client Retention Rate" },
-// ];
+
 
 const counterItems = [
   { value: 1, suffix: "+", label: "Years of Learning" },
   { value: 2, suffix: "+", label: "Personal Projects" },
   { value: 1, suffix: "+", label: "Team Projects" },
-  { value: 100, suffix: "%", label: "Commitment to Growth" }
+  { value: 100, suffix: "%", label: "Commitment to Growth" },
 ];
 
 const logoIconsList = [
@@ -81,18 +76,18 @@ const logoIconsList = [
 const abilities = [
   {
     imgPath: "/images/seo.png",
-    title: "Quality Focus",
-    desc: "Delivering high-quality results while maintaining attention to every detail.",
+    title: "Good Quality Work",
+    desc: "I always try to do my best and make sure everything looks and works great.",
   },
   {
     imgPath: "/images/chat.png",
-    title: "Reliable Communication",
-    desc: "Keeping you updated at every step to ensure transparency and clarity.",
+    title: "Easy to Talk To",
+    desc: "I keep you updated and explain things clearly so you always know what's going on.",
   },
   {
     imgPath: "/images/time.png",
-    title: "On-Time Delivery",
-    desc: "Making sure projects are completed on schedule, with quality & attention to detail.",
+    title: "Finish On Time",
+    desc: "I complete the work when I say I will, without rushing or missing important things.",
   },
 ];
 
@@ -152,65 +147,65 @@ const techStackIcons = [
 const expCards = [
   {
     review:
-      "Prasan’s understanding of deployment pipelines was a huge asset when we migrated to Render. He set up efficient CI/CD workflows that made our deployments smooth and reliable. What used to take hours and manual steps became automated and predictable. His work gave the team confidence to ship faster without worrying about downtime.",
+      "I used Render to host and manage my portfolio project. I set up automatic deployments so that every time I updated the code, the latest version went live without doing anything manually. This helped me save time, avoid mistakes, and keep my site always up-to-date and running smoothly.",
     imgPath: "/exp/render.png",
     logoPath: "/exp/logo1.png",
     title: "Frontend Developer",
     date: "January 2023 - Present",
     hoverColor: "rgba(30, 144, 255, 0.3)", // Slight bluish color
     responsibilities: [
-      "Set up and managed deployment pipelines on Render to ensure smooth and reliable releases.",
-      "Configured automated builds and continuous deployment to reduce manual steps and errors.",
-      "Monitored application performance and uptime after deployment, quickly addressing any issues.",
-      "Collaborated with the development team to streamline the release process and improve delivery speed.",
+      "Deployed my portfolio project on Render, a hosting platform.",
+      "Set up automatic deployment so changes go live after pushing code to GitHub.",
+      "Kept the site updated and running smoothly without manual work.",
+      "Learned how to handle deployment, environment variables, and performance monitoring.",
     ],
   },
+
   {
     review:
-      "Prasan’s work with Express.js was instrumental in building robust and scalable backend APIs. He consistently approached complex problems with a practical mindset, delivering clean and efficient code that made integration seamless.",
+      "I used Express.js to build the backend of my project. It helped me create routes and APIs to send and receive data between the frontend and the database. I focused on writing clean, simple code that made my app work smoothly and reliably.",
     imgPath: "/exp/e2.png",
     logoPath: "/exp/logo3.png",
-    title: "Backend Developer", // Changed from Full Stack to Backend Developer
+    title: "Backend Developer",
     date: "June 2020 - December 2023",
     hoverColor: "linear-gradient(to right, #ccc, #fff)", // Grey + white
     responsibilities: [
-      "Designed and implemented scalable RESTful APIs using Express.js to support web and mobile applications.",
-      "Collaborated with frontend teams to ensure smooth data integration and efficient communication between client and server.",
-      "Maintained and optimized server-side logic for performance and security.",
-      "Participated in code reviews and contributed to improving backend architecture and best practices.",
+      "Built backend routes and RESTful APIs using Express.js for handling user and data requests.",
+      "Connected the frontend with MongoDB through secure and organized API endpoints.",
+      "Handled form submissions, user actions, and other data operations with proper error handling.",
+      "Focused on clean and readable code to make future changes and debugging easier.",
     ],
   },
   {
     review:
-      "Prasan’s full-stack expertise using the MERN stack enabled the delivery of high-quality, efficient mobile and backend solutions. His work enhanced both the user experience and backend reliability, helping the product achieve its goals.",
+      "I built a full-stack project using the MERN stack (MongoDB, Express.js, React, Node.js). I handled everything from designing the frontend to setting up the backend and connecting it to a database. This project helped me learn how all parts of a web app work together smoothly.",
     imgPath: "/exp/mern.png",
     logoPath: "/exp/logo5.png",
-    title: "Full Stack Developer",
+    title: "Full Stack Developer (Solo Project)",
     date: "March 2019 - May 2020",
     hoverColor: "rgba(50, 205, 50, 0.3)", // Slight greenish color
     responsibilities: [
-      "Developed responsive web applications using React, ensuring a seamless user experience across both mobile and desktop devices, and integrated them with backend APIs built on Node.js and Express.",
-      "Designed and maintained backend services and APIs with MongoDB, Express, and Node.js for scalability and reliability.",
-      "Optimized app and server performance through thorough testing and code refinement.",
-      "Collaborated with product and design teams to implement new features based on user feedback.",
+      "Created a responsive frontend using React for both mobile and desktop users.",
+      "Built backend APIs using Express.js and Node.js to handle data and user actions.",
+      "Connected the backend with MongoDB to store and manage data.",
+      "Improved app speed and fixed bugs by testing and cleaning up the code regularly.",
     ],
   },
   {
-  review:
-    "Prasan consistently delivered high-quality, efficient React components that greatly improved our web application’s performance and usability. His attention to detail and collaborative approach helped align the frontend with our product goals.",
-  imgPath: "/exp/react2.png",
-  logoPath: "/exp/logo4.png",
-  title: "React Developer",
-  date: "March 2019 - May 2020",
-  hoverColor: "rgba(255, 105, 180, 0.3)", // Slightly pink color
-  responsibilities: [
-    "Developed interactive and responsive user interfaces using React.js, improving usability across devices.",
-    "Collaborated with UI/UX designers to implement pixel-perfect designs and enhance user flow.",
-    "Optimized component rendering and performance through smart state management and lazy loading.",
-    "Worked closely with backend developers to ensure seamless API integration and data handling.",
-  ],
-}
-
+    review:
+      "I focused on building the frontend of my project using React.js. I created clean and responsive components that worked well on both desktop and mobile. This helped me improve the look and feel of the app while also making it faster and easier to use.",
+    imgPath: "/exp/react2.png",
+    logoPath: "/exp/logo4.png",
+    title: "React Developer (Solo Project)",
+    date: "March 2019 - May 2020",
+    hoverColor: "rgba(255, 105, 180, 0.3)", // Slightly pink color
+    responsibilities: [
+      "Built user interfaces using React.js with reusable and well-structured components.",
+      "Made the design responsive to ensure smooth experience on both mobile and desktop screens.",
+      "Used state and props to manage data and control how components behaved.",
+      "Connected the frontend to backend APIs and handled loading and displaying data.",
+    ],
+  },
 ];
 
 const expLogos = [
@@ -228,28 +223,26 @@ const expLogos = [
   },
 ];
 
-
-
 const socialImgs = [
   {
     name: "insta",
     imgPath: "/images/insta.png",
-    link: "#"
+    link: "#",
   },
   {
     name: "fb",
     imgPath: "/images/git3.png",
-    link: "https://github.com/prasan-RKP"
+    link: "https://github.com/prasan-RKP",
   },
   {
     name: "x",
     imgPath: "/images/x.png",
-    link: "#"
+    link: "#",
   },
   {
     name: "linkedin",
     imgPath: "/images/linkedin.png",
-    link:"https://www.linkedin.com/in/prasan-kumar-05a623345?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+    link: "https://www.linkedin.com/in/prasan-kumar-05a623345?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
 ];
 
@@ -260,7 +253,6 @@ export {
   counterItems,
   expCards,
   expLogos,
-  testimonials,
   socialImgs,
   techStackIcons,
   techStackImgs,

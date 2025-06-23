@@ -138,10 +138,10 @@ const Experience = () => {
                       </div>
                       <div>
                         <h1 className="font-semibold text-3xl">{card.title}</h1>
-                        <p className="my-5 text-white-50">
+                        {/* <p className="my-5 text-white-50">
                           🗓️&nbsp;{card.date}
-                        </p>
-                        <p className="text-[#839CB5] italic">
+                        </p> */}
+                        <p className="text-[#839CB5] italic pt-2">
                           Responsibilities
                         </p>
                         <ul className="list-disc ms-5 mt-5 flex flex-col gap-5 text-white-50">

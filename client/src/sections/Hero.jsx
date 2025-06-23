@@ -140,7 +140,7 @@ const Hero = () => {
 
             <p className="text-white-50 relative z-10 pointer-events-none anim-paragraph">
                I'm Prasan and passionate about transforming ideas into elegant,
-              functional code.
+              functional  code.
             </p>
 
             {/* FIXED: Mobile button container */}
@@ -196,13 +196,13 @@ const Hero = () => {
                 {wrapLetters("into Creative Builds")}
               </h1>
               <h1 className="anim-results">
-                {wrapLetters("that Empower People")}
+                {wrapLetters("that Empower Community")}
               </h1>
             </div>
 
             <p className="text-white-50 text-xl relative z-10 pointer-events-none anim-paragraph">
               I'm Prasan and passionate about transforming ideas into elegant,
-              functional code.
+              functional  code.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-self-end gap-4 sm:gap-6">

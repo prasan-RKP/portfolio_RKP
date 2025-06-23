@@ -140,7 +140,7 @@ const Contact = () => {
                     <div className="cta-button group">
                       <div className="bg-circle" />
                       <p className="text my-straw text-base sm:text-lg">
-                        {loading ? "Sending..." : "Send Message"}
+                        {loading ? "Dropping..." : "Drop Review"}
                       </p>
                       <div className="arrow-wrapper">
                         <img src="/images/arrow-down.svg" alt="arrow" />
