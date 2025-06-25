@@ -467,7 +467,7 @@ const Testimonials = () => {
       <div className="w-full h-full md:px-10 px-5">
         <TitleHeader
           title="Viewers Expression ❤️"
-          sub="⭐️ Feedback highlights"
+          sub="Feedback highlights ⭐️"
         />
 
         {/* Empty state */}
