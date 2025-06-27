@@ -21,25 +21,38 @@ const Contact = () => {
 
   // Validate input
   const validForm = () => {
-    const { name, email, message } = form;
-    if (!name.trim()) {
-      toast.error("Please fill your name.");
-      return false;
-    }
-    if (!email.trim()) {
-      toast.error("Please fill your email address.");
-      return false;
-    }
-    if (!email.includes("@") || !email.includes(".")) {
-      toast.error("Please enter a valid email addres.");
-      return false;
-    }
-    if (!message.trim()) {
-      toast.error("Please drop you review..");
-      return false;
-    }
-    return true;
-  };
+  const { name, email, message } = form;
+
+  if (!name.trim()) {
+    toast.error("Please fill your name.");
+    return false;
+  }
+
+  if (!email.trim()) {
+    toast.error("Please fill your email address.");
+    return false;
+  }
+
+  if (!email.includes("@") || !email.includes(".")) {
+    toast.error("Please enter a valid email address.");
+    return false;
+  }
+
+  const trimmedMessage = message.trim();
+
+  if (!trimmedMessage) {
+    toast.error("Please drop your review.");
+    return false;
+  }
+
+  if (trimmedMessage.length < 200) {
+    toast.error("Message must be at least 200 characters long");
+    return false;
+  }
+
+  return true;
+};
+
 
   // Handle input change
   const handleChange = (e) => {

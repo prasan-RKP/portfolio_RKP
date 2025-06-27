@@ -488,13 +488,6 @@ const Testimonials = () => {
                 <GlowCard card={review} index={index}>
                   <div className="flex items-center gap-3">
                     <div>
-                      <img
-                        src="/mern/man.png"
-                        alt="avatar"
-                        className="w-12 h-12 rounded-full"
-                      />
-                    </div>
-                    <div>
                       <p className="font-bold">{review.name}</p>
                       <p className="text-white-50">{review.message}</p>
                     </div>
@@ -525,7 +518,7 @@ const Testimonials = () => {
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.6 }}
               >
-                <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6">
+                <div className="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-5">
                   {displayedReviews.map((review, index) => (
                     <motion.div
                       key={index}
@@ -535,13 +528,7 @@ const Testimonials = () => {
                     >
                       <GlowCard card={review} index={index}>
                         <div className="flex items-center gap-3">
-                          <div>
-                            <img
-                              src="/mern/man.png"
-                              alt="avatar"
-                              className="w-12 h-12 rounded-full"
-                            />
-                          </div>
+                          
                           <div>
                             <p className="font-bold">{review.name}</p>
                             <p className="text-white-50">{review.message}</p>
@@ -596,13 +583,6 @@ const Testimonials = () => {
               <GlowCard card={review} key={index} index={index}>
                 <div className="flex items-center gap-3">
                   <div>
-                    <img
-                     src="/mern/man.png"
-                      alt="avatar"
-                      className="w-12 h-12 rounded-full"
-                    />
-                  </div>
-                  <div>
                     <p className="font-bold">{review.name}</p>
                     <p className="text-white-50">{review.message}</p>
                   </div>
@@ -617,3 +597,5 @@ const Testimonials = () => {
 };
 
 export default Testimonials;
+
+//

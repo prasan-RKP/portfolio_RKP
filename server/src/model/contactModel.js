@@ -16,7 +16,6 @@ const contactSchema = new mongoose.Schema({
     type: String,
     required: true,
     minlength: 3,
-    maxlength: 220,
   },
 });
 
