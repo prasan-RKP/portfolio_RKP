@@ -181,7 +181,7 @@ const expCards = [
       "I built a full-stack project using the MERN stack (MongoDB, Express.js, React, Node.js). I handled everything from designing the frontend to setting up the backend and connecting it to a database. This project helped me learn how all parts of a web app work together smoothly.",
     imgPath: "/exp/mern.png",
     logoPath: "/exp/logo5.png",
-    title: "Full Stack Developer (Solo Project)",
+    title: "Full Stack Developer",
     date: "March 2019 - May 2020",
     hoverColor: "rgba(50, 205, 50, 0.3)", // Slight greenish color
     responsibilities: [
@@ -196,7 +196,7 @@ const expCards = [
       "I focused on building the frontend of my project using React.js. I created clean and responsive components that worked well on both desktop and mobile. This helped me improve the look and feel of the app while also making it faster and easier to use.",
     imgPath: "/exp/react2.png",
     logoPath: "/exp/logo4.png",
-    title: "React Developer (Solo Project)",
+    title: "React Developer",
     date: "March 2019 - May 2020",
     hoverColor: "rgba(255, 105, 180, 0.3)", // Slightly pink color
     responsibilities: [
