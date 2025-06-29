@@ -4,6 +4,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 import { motion } from "framer-motion";
 
+
 gsap.registerPlugin(ScrollTrigger);
 
 const ShowProject = () => {
@@ -129,18 +130,20 @@ const ShowProject = () => {
             {/* Animated background gradient overlay */}
             <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 via-purple-500/5 to-pink-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
-            <motion.div
-              className="image-wrapper relative overflow-hidden rounded-xl"
-              variants={imageVariants}
-            >
-              <img
-                src="/mern/proj1.png"
-                alt="Ryde App Interface"
-                className="transition-all duration-500 group-hover:brightness-110"
-              />
-              {/* Subtle shine effect */}
-              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
-            </motion.div>
+            <a href="https://github.com/prasan-RKP" target="_blank" rel="noopener noreferrer">
+              <motion.div
+                className="image-wrapper relative overflow-hidden rounded-xl"
+                variants={imageVariants}
+              >
+                <img
+                  src="/mern/proj1.png"
+                  alt="Ryde App Interface"
+                  className="transition-all duration-500 group-hover:brightness-110"
+                />
+                {/* Subtle shine effect */}
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
+              </motion.div>
+            </a>
 
             <div className="text-content relative z-10">
               <motion.h2
@@ -192,6 +195,7 @@ const ShowProject = () => {
             >
               <div className="absolute inset-0 bg-gradient-to-br from-gray-500/10 via-slate-500/5 to-zinc-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
+            <a href="https://github.com/prasan-RKP" target="_blank" rel="noopener noreferrer">
               <motion.div
                 className="image-wrapper bg-[#868484] relative overflow-hidden rounded-lg"
                 variants={imageVariants}
@@ -203,6 +207,7 @@ const ShowProject = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-transparent to-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </motion.div>
+              </a>
 
               <motion.h2
                 variants={textVariants}
@@ -231,19 +236,19 @@ const ShowProject = () => {
               <div className="absolute inset-0 bg-gradient-to-br from-pink-500/10 via-rose-500/5 to-red-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
               <motion.div
-  className="image-wrapper bg-[#FFE7EB] relative overflow-hidden rounded-lg flex items-center justify-center"
-  variants={imageVariants}
->
-  {/* <img 
+                className="image-wrapper bg-[#FFE7EB] relative overflow-hidden rounded-lg flex items-center justify-center"
+                variants={imageVariants}
+              >
+                {/* <img 
     src="/images/project3.png" 
     alt="YC Directory App"
     className="transition-all duration-500 group-hover:brightness-110 group-hover:saturate-110"
   /> */}
-  <h3 className=" hover:text-slate-800 text-center text-2xl font-bold text-gray-800 py-10">
-    Project 3 Coming Soon ...
-  </h3>
-  <div className="absolute inset-0 bg-gradient-to-br from-pink-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-</motion.div>
+                <h3 className=" hover:text-slate-800 text-center text-2xl font-bold text-gray-800 py-10">
+                  Project 3 Coming Soon ...
+                </h3>
+                <div className="absolute inset-0 bg-gradient-to-br from-pink-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </motion.div>
 
               {/* <motion.h2 
                 variants={textVariants}

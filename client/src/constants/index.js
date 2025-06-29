@@ -195,10 +195,10 @@ const expCards = [
     review:
       "I focused on building the frontend of my project using React.js. I created clean and responsive components that worked well on both desktop and mobile. This helped me improve the look and feel of the app while also making it faster and easier to use.",
     imgPath: "/exp/react2.png",
-    logoPath: "/exp/logo4.png",
+    logoPath: "/exp/logo4n.png",
     title: "React Developer",
     date: "March 2019 - May 2020",
-    hoverColor: "rgba(255, 105, 180, 0.3)", // Slightly pink color
+    hoverColor: "rgb(48 125 228 / 30%)", // Slightly pink color
     responsibilities: [
       "Built user interfaces using React.js with reusable and well-structured components.",
       "Made the design responsive to ensure smooth experience on both mobile and desktop screens.",
@@ -207,6 +207,9 @@ const expCards = [
     ],
   },
 ];
+
+//rgb(48 125 228 / 30%)
+//rgba(255, 105, 180, 0.3)
 
 const expLogos = [
   {

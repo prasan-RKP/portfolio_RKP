@@ -21,42 +21,42 @@ const Contact = () => {
 
   // Validate input
   const validForm = () => {
-  const { name, email, message } = form;
+    const { name, email, message } = form;
 
-  if (!name.trim()) {
-    toast.error("Please fill your name.");
-    return false;
-  }
+    if (!name.trim()) {
+      toast.error("Please fill your name.");
+      return false;
+    }
 
-  if (!email.trim()) {
-    toast.error("Please fill your email address.");
-    return false;
-  }
+    if (!email.trim()) {
+      toast.error("Please fill your email address.");
+      return false;
+    }
 
-  if (!email.includes("@") || !email.includes(".")) {
-    toast.error("Please enter a valid email address.");
-    return false;
-  }
+    if (!email.includes("@") || !email.includes(".")) {
+      toast.error("Please enter a valid email address.");
+      return false;
+    }
 
-  const trimmedMessage = message.trim();
+    const trimmedMessage = message.trim();
 
-  if (!trimmedMessage) {
-    toast.error("Please drop your review.");
-    return false;
-  }
+    if (!trimmedMessage) {
+      toast.error("Please drop your review.");
+      return false;
+    }
 
-  if (trimmedMessage.length < 200) {
-    toast.error("Message must be at least 200 characters long");
-    return false;
-  }
-
-  return true;
-};
-
+    return true;
+  };
 
   // Handle input change
   const handleChange = (e) => {
     const { name, value } = e.target;
+
+    if (name === "message" && value.length > 200) {
+      toast.error("Message cannot exceed 200 characters!");
+      return;
+    }
+
     setForm((prev) => ({ ...prev, [name]: value }));
   };
 
@@ -71,7 +71,7 @@ const Contact = () => {
       setForm({ name: "", email: "", message: "" }); // Reset form
       setIsUploading(true);
     } catch (err) {
-     // toast.error("Failed to submit your message. Try again.");
+      // toast.error("Failed to submit your message. Try again.");
     } finally {
       setLoading(false);
     }
@@ -140,7 +140,11 @@ const Contact = () => {
                       onChange={handleChange}
                       placeholder="Prompt Your Idea / Drop your Experience 🍕"
                       rows="4"
+                      maxLength={200}
                     />
+                    <p className="text-sm text-right text-gray-500 mt-1">
+                      {form.message.length}/200 
+                    </p>
                   </div>
 
                   <button

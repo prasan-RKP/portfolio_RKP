@@ -347,8 +347,6 @@ section {
       img {
         @apply size-5 xl:-translate-y-32 translate-y-0 animate-bounce group-hover:translate-y-0 transition-all duration-500;
       }
-
-     
     }
   }
 
@@ -492,10 +490,12 @@ section {
     0deg,
     rgba(30, 144, 255, 0) 0%,
     /* Transparent start */ rgba(30, 144, 255, 1) 20%,
-    /* Dodger Blue */ #cccccc 40%,
-    /* Light Grey */ #ffffff 45%,
-    /* White */ rgba(50, 205, 50, 1) 65%,
-    /* Lime Green */ rgba(255, 105, 180, 1) 85% /* Hot Pink */
+    rgba(50, 205, 50, 1) 48%,
+    /* Dodger Blue */ 
+
+    /* Light Grey */ #ffffff 30%,
+    #cccccc 10%,
+    /* White */ /* Lime Green */ rgb(43, 32, 69) 85% /* Hot Pink */
   );
 }
 
