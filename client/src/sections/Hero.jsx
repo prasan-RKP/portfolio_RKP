@@ -130,10 +130,10 @@ const Hero = () => {
                   </span>
                 </span>
               </h1>
-              <h2 className="anim-projects my-emig">
+              <h2 className="anim-projects my-haloyen">
                 {wrapLetters("into Creative Builds")}
               </h2>
-              <h2 className="anim-results my-emig">
+              <h2 className="anim-results my-haloyen">
                 {wrapLetters("that Empower Community")}
               </h2>
             </div>
@@ -192,10 +192,11 @@ const Hero = () => {
                   </span>
                 </span>
               </h1>
-              <h1 className="anim-projects my-emig">
+              {/* i want to increse the font weight */}
+              <h1 className="anim-projects my-haloyen ">
                 {wrapLetters("into Creative Builds")}
               </h1>
-              <h1 className="anim-results my-emig">
+              <h1 className="anim-results my-haloyen">
                 {wrapLetters("that Empower Community")}
               </h1>
             </div>

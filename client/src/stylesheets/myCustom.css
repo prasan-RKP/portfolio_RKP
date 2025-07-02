@@ -156,6 +156,17 @@
   }
 
 
+
+  @font-face {
+    font-family: "haloyen";
+    src: url("/fonts/Haloyen.otf") format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  .my-haloyen{
+    font-family: "haloyen" , sans-serif;
+  }
   
 /* 
 @font-face {
