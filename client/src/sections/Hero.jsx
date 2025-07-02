@@ -130,10 +130,10 @@ const Hero = () => {
                   </span>
                 </span>
               </h1>
-              <h2 className="anim-projects">
+              <h2 className="anim-projects my-emig">
                 {wrapLetters("into Creative Builds")}
               </h2>
-              <h2 className="anim-results">
+              <h2 className="anim-results my-emig">
                 {wrapLetters("that Empower Community")}
               </h2>
             </div>
@@ -192,10 +192,10 @@ const Hero = () => {
                   </span>
                 </span>
               </h1>
-              <h1 className="anim-projects">
+              <h1 className="anim-projects my-emig">
                 {wrapLetters("into Creative Builds")}
               </h1>
-              <h1 className="anim-results">
+              <h1 className="anim-results my-emig">
                 {wrapLetters("that Empower Community")}
               </h1>
             </div>
