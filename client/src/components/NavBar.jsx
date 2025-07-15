@@ -106,7 +106,7 @@ const NavBar = () => {
             whileTap={{ scale: 0.95 }}
             transition={{ type: "spring", stiffness: 300, damping: 20 }}
           >
-            <span className="font-semibold tracking-wide my-mayan">Contact me</span>
+            <span className="font-semibold tracking-wide my-mayan">Let’s connect</span>
           </motion.div>
         </a>
       </div>
