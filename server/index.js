@@ -36,6 +36,11 @@ app.get(/^\/(?!auth).*/, (req, res) => {
   res.sendFile(path.resolve(_dirname, "client", "dist", "index.html"));
 });
 
+// ✅ Healthcheck route for self-ping
+app.get('/healthcheck', (req, res) => {
+  res.status(200).send('OK');
+});
+
 // ✅ CONNECT TO MONGODB ATLAS (not local)
 mongoose.connect(MONGO_URI, {
   useNewUrlParser: true,
@@ -46,6 +51,13 @@ mongoose.connect(MONGO_URI, {
 
   app.listen(PORT, () => {
     console.log(`🚀 Server is running on port ${PORT}`);
+
+    // 🔁 Self-ping to prevent Render from sleeping
+    setInterval(() => {
+      fetch('https://portfolio-rkp.onrender.com/healthcheck')
+        .then(res => console.log(`[Self-Ping]: ${res.status} at ${new Date().toLocaleTimeString()}`))
+        .catch(err => console.error('[Self-Ping Error]:', err));
+    }, 5 * 60 * 1000); // every 5 minutes
   });
 })
 .catch((err) => {
