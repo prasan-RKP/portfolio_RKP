@@ -45,6 +45,11 @@ const Contact = () => {
       return false;
     }
 
+    if (message.length > 200) {  // New check for max length
+      toast.error("Message cannot exceed 200 characters!");
+      return false;
+    }
+
     return true;
   };
 
@@ -140,19 +145,17 @@ const Contact = () => {
                       onChange={handleChange}
                       placeholder="Prompt Your Idea / Drop your Experience 🍕"
                       rows="4"
-                      maxLength={200}
                     />
                     <p className="text-sm text-right text-gray-500 mt-1">
-                      {form.message.length}/200 
+                      {form.message.length}/200
                     </p>
                   </div>
 
                   <button
                     type="submit"
                     disabled={loading}
-                    className={`${
-                      loading ? "opacity-50 cursor-not-allowed" : ""
-                    }`}
+                    className={`${loading ? "opacity-50 cursor-not-allowed" : ""
+                      }`}
                   >
                     <div className="cta-button group">
                       <div className="bg-circle" />

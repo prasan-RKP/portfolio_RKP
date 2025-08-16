@@ -8,16 +8,16 @@ router.post("/submit-review", async (req, res) => {
   const { name, email, message } = req.body;
 
   try {
-    console.log("📥 Incoming data:", { name, email, message });
+    console.log("🔥 Incoming data:", { name, email, message });
 
     if (!name || !email || !message) {
       //console.log("❌ Missing fields");
       return res.status(400).json({ msg: "Please fill in all required fields" });
     }
 
-    if (message.length < 200) {
-      //console.log("❌ Message too short");
-      return res.status(400).json({ msg: "Message must be at least 200 characters long" });
+    if (message.length > 200) { // Check if message exceeds 200 characters
+      //console.log("❌ Message too long");
+      return res.status(400).json({ msg: "Message cannot exceed 200 characters" }); // Fixed error message
     }
 
     const existingUser = await Contact.findOne({ email });
@@ -35,7 +35,7 @@ router.post("/submit-review", async (req, res) => {
     return res.status(201).json({
       _id: savedUser._id,
       name: savedUser.name,
-      email: savedUser.email,
+      email: savedUser.email, 
       message: savedUser.message,
     });
 
@@ -44,8 +44,6 @@ router.post("/submit-review", async (req, res) => {
     return res.status(500).json({ msg: "Internal Server Error", error: error.message });
   }
 });
-
-
 
 //console.log("Defining GET /fetch-review");
 router.get("/fetch-review", async (req, res) => {
@@ -61,4 +59,3 @@ router.get("/fetch-review", async (req, res) => {
 });
 
 export default router;
-//grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 mt-16" style="opacity: 1;transform: none;overflow-x: scroll;
