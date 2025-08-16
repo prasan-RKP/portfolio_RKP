@@ -19,7 +19,7 @@ const _dirname = path.resolve();
 app.use(express.json({ limit: "10mb" }));
 app.use(cookieParser());
 app.use(cors({
-  origin: ["http://localhost:5173", "https://portfolio-rkp.onrender.com"],
+  origin: ["http://localhost:5173", "https://portfolio-rkp.onrender.com", "https://prasan.onrender.com"],
   credentials: true
 }));
 
@@ -54,7 +54,7 @@ mongoose.connect(MONGO_URI, {
 
     // 🔁 Self-ping to prevent Render from sleeping
     setInterval(() => {
-      fetch('https://portfolio-rkp.onrender.com/healthcheck')
+      fetch('https://prasan.onrender.com/healthcheck')
         .then(res => console.log(`[Self-Ping]: ${res.status} at ${new Date().toLocaleTimeString()}`))
         .catch(err => console.error('[Self-Ping Error]:', err));
     }, 5 * 60 * 1000); // every 5 minutes
